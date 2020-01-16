@@ -65,19 +65,49 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.main-wrapper,nav{
+.main-wrapper,nav,.header-info,.tagline-container{
 	display: flex;
 }
 
 .main-wrapper {
 	flex-direction: column;
+	max-width: 960px;
+	margin:25px auto;
+}
+
+nav {
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.links {
+	justify-content: space-around;
+	align-content: center;
 }
 
 .links a{
 	color:grey;
 	text-decoration: none;
+	margin: 10px;
+	padding: 20px;
 }
 
 .links a:hover {
 	color:cornflowerblue;
+}
+
+.logo {
+	margin-top: 10%;
+}
+
+.header-info {
+	justify-content: space-evenly;
+}
+
+.tagline-container{
+	width: 300px;
+	max-height: 300px;
+	background: red;
+	flex-direction: column;
+	justify-content: center;
 }
