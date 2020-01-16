@@ -190,6 +190,37 @@ h1 {
 	justify-content: center;
 }
 
-.services-info {
-margin: 32px;
+.services-header-info {
+    margin: 32px;
 }
+
+.content{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap:wrap;
+	margin: 24px;
+}
+
+.content-info{
+	width: 48%;
+	border:1px solid black;
+	margin-bottom: 24px;
+	padding: 12px;
+	background: GhostWhite;
+	
+}
+
+.content-info p{
+	line-height: 1.5;
+}
+
+.lm-btn {
+	background: aliceblue;
+	border:1px solid black;
+	align-self: flex-end;
+	width:125px;
+	height:35px;
+	margin-top:12px;
+	border-radius: 4px;
+}
+
