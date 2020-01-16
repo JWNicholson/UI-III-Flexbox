@@ -65,7 +65,8 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.main-wrapper,nav,.header-info,.tagline-container{
+.main-wrapper,nav,.header-info,.tagline-container,.content-1,
+.content-2{
 	display: flex;
 }
 
@@ -73,6 +74,11 @@ h1, h2, h3, h4, h5 {
 	flex-direction: column;
 	max-width: 960px;
 	margin:25px auto;
+}
+
+header {
+	border-bottom: 1px solid grey;
+	margin-bottom: 24px;
 }
 
 nav {
@@ -83,6 +89,8 @@ nav {
 	/* position:fixed;
 	top:0; */
 }
+
+
 
 .links {
 	justify-content: space-around;
@@ -100,14 +108,11 @@ nav {
 	color:cornflowerblue;
 }
 
- /* nav .logo {
-	
-} */
-
 h1 {
 	font-size: 68px;
 	margin: auto;
 }
+
 
 .header-info {
 	justify-content: space-evenly;
@@ -118,7 +123,6 @@ h1 {
 
 .tagline-container{
 	width: 50%;
-	
 	flex-direction: column;
 	text-align: center;
 }
@@ -136,4 +140,40 @@ h1 {
 	background-color: fuchsia;
 	color:whitesmoke;
 	transform: scale(1.5);
+}
+
+.content-1 {
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+
+.content-1 div {
+	width: 45%;
+}
+
+
+.content-2 {
+	margin: 24px 0;
+	justify-content: space-between;
+	border-bottom: 1px solid grey;
+	padding-bottom: 24px;
+}
+
+.content-2 div {
+	width: 33%;	
+}
+
+ .contact {
+	padding: 12px;
+	line-height: 1.5;
+} 
+
+
+ footer div {
+	text-align: center;
+ }
+.copyright {
+   padding: 12px;
+   font-size: small;
+   margin: 2%;
 }
